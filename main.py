@@ -64,9 +64,9 @@ for row in range(0,len(words)):
     ans=dic[0]
     ans=translate(ans)
     print(ans)
-    if(len(ans)>15):
-        filewt.write(final_ans[row]+','+ans+'\n')
-        continue
+    #if(len(ans)>15):
+    #    filewt.write(final_ans[row]+','+ans+'\n')
+    #    continue
     ans=get_thesaurus(ans)
     filewt.write(final_ans[row]+','+ans+'\n')
     print(ans)
